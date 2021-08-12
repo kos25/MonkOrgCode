@@ -1,0 +1,24 @@
+<template>
+
+    
+  
+    <div class="slds-p-around_medium lgc-bg">
+        <div  class="slds-m-around_xx-small">
+            <lightning-button name="Select" label="Select" variant="brand" onclick={handleSelect}></lightning-button> 
+        </div>
+       
+
+        <lightning-tree-grid columns = {gridColumns}
+                             data = {gridData}
+                             key-field = "Id"
+                             onrowaction={handleRowClick}
+                             onrowselection={handleRowSelction}
+                             selected-rows={selectedRows}
+                             hide-checkbox-column = "true"
+                             >
+        </lightning-tree-grid>
+
+
+    </div>
+  
+</template>

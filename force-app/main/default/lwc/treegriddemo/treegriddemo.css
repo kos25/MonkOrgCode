@@ -1,0 +1,22 @@
+.lgc-bg {
+    background-color: rgb(242, 242, 242);
+}
+
+.lgc-bg-inverse {
+    background-color: rgb(22, 50, 92);
+}
+
+
+.slds-checkbox__label{
+    display : none; 
+}
+
+
+.customCSSClass {
+    color: blue;
+   }
+
+
+   .slds-button{
+       border: none;
+   }

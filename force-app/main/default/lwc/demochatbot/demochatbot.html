@@ -1,0 +1,69 @@
+<template>
+   <div style="background-color: white;">
+        <button class="open-button" onclick={toggleForm}>Chat</button>
+
+        <div class={chatpopupClass} id="myForm">
+            <div  class="form-container">
+
+                <h1>Chat</h1>
+                <label for="msg"><b>Message</b></label>
+               
+                
+                <div style="overflow: scroll;  overflow-x: hidden; height:200px">
+                        <div class="chat-container">
+                            <p>Hello. How are you today?</p>
+                        </div>
+
+                        <div class="chat-container darker">
+                            <p style="float:right">Hey! I'm fine. Thanks</p>
+                        </div>
+
+                        <div class="chat-container">
+                            <p>Sweet! So, what do you</p>
+                        </div>
+
+                        <div class="chat-container">
+                            <p  style="float:right" >Nah, I dunno. Play soccer..</p>
+                        </div>
+                         <div class="chat-container">
+                            <p>Sweet! So, what do you</p>
+                        </div>
+
+                        <div class="chat-container darker">
+                            <p  style="float:right" >Nah, I dunno. Play soccer..</p>
+                        </div>
+
+                         <div class="chat-container">
+                            <p>Sweet! So, what do you</p>
+                        </div>
+
+                        <div class="chat-container darker">
+                            <p  style="float:right" >Nah, I dunno. Play soccer..</p>
+                        </div>
+                </div>
+               
+
+
+
+
+
+
+                <lightning-textarea name="msg" label="msg" placeholder="Type message.."></lightning-textarea>
+
+
+                <div class="slds-grid slds-gutters">
+                        <div class="slds-col">      
+                            <button type="submit" class="btn">Send</button>
+                        </div>
+                        <div class="slds-col">
+                             <button type="button" class="btn cancel" onclick={toggleForm}>Close</button>
+                        </div>
+                </div>
+
+
+            </div>
+        </div> 
+
+   </div>
+         
+</template>

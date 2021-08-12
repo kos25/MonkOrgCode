@@ -1,0 +1,11 @@
+<aura:component controller="fieldApisMangerCls">
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}" />
+    <aura:attribute name="ObjNameList" type="List" />
+    Hi Application
+
+    <lightning:input aura:id="sObjectName"  name="objName" label="Text field with a placeholder" placeholder="Search Obj name" onchange="{!c.handleInput}"/>
+
+    <aura:iteration items="{!v.ObjNameList}" var="item">
+        {!item}<br/>
+    </aura:iteration>
+</aura:component>
